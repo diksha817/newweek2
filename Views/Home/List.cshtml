@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WEEK2.Models.Book>
+
+    <html>
+        <head>
+            <title>
+
+            </title>
+        </head>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ISBN</th>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var Book in Model)
+                    {
+                        <tr>
+                            <td>@Book.ISBN</td>
+                            <td>@Book.Title</td>
+                            <td>@Book.Author</td>
+                            <td>@Book.Price</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </body>
+    </html>
